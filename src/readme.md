@@ -1,0 +1,1 @@
+The VDrone packages is intended to provide utilities for flying virtual drones in support of developing the Valkyrie flight controller.
