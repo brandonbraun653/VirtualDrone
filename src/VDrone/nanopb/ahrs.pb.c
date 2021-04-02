@@ -6,7 +6,13 @@
 #error Regenerate this file with the current version of nanopb generator.
 #endif
 
+PB_BIND(AccelSample, AccelSample, AUTO)
+
+
 PB_BIND(GyroSample, GyroSample, AUTO)
+
+
+PB_BIND(MagSample, MagSample, AUTO)
 
 
 

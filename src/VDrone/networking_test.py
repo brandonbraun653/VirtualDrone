@@ -56,7 +56,7 @@ def main() -> None:
   signal.signal(signal.SIGINT, sig_int_handler)
 
   while not main_loop_kill.is_set():
-    topic = b'gyro'
+    topic = b'accel'
 
     data = ahrs_pb2.GyroSample()
     data.x = random.uniform(-10.0, 10.0)
