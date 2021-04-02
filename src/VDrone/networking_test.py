@@ -3,10 +3,11 @@ import json
 import signal
 import random
 import time
-import msgpack
 
 from pathlib import Path
 from threading import Event
+
+from VDrone.nanopb import ahrs_pb2
 
 
 main_loop_kill = Event()
@@ -24,7 +25,7 @@ def get_root(current: Path, root: str) -> Path:
   if current.stem == root or current.is_mount():
     return current
   else:
-    return get_root(current.parent)
+    return get_root(current.parent, root)
 
 
 def parse_json(file: Path):
@@ -55,11 +56,15 @@ def main() -> None:
   signal.signal(signal.SIGINT, sig_int_handler)
 
   while not main_loop_kill.is_set():
-    topic = b'gyro_x'
-    data = random.uniform(-10.0, 10.0)
+    topic = b'gyro'
+
+    data = ahrs_pb2.GyroSample()
+    data.x = random.uniform(-10.0, 10.0)
+    data.y = random.uniform(-10.0, 10.0)
+    data.z = random.uniform(-10.0, 10.0)
 
     # socket.send(topic)
-    socket.send_multipart([topic, msgpack.packb(data, use_bin_type=True)])
+    socket.send_multipart([topic, data.SerializeToString()])
     print("Sent [{}, {}]".format(topic, data))
     time.sleep(1)
 
