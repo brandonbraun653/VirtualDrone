@@ -44,13 +44,13 @@ def sig_int_handler(signum, frame):
 
 def main() -> None:
   project_root = get_root(Path.cwd(), "Valkyrie")
-  json_cfg = parse_json(Path(project_root, 'src', 'cfg', 'sim', 'ports.json'))
+  json_cfg = parse_json(Path(project_root, 'src', 'database', 'sim_ports.json'))
 
-  gyro_port = json_cfg['base_port'] + json_cfg['sensors']['gyroscope']
+  accel_port = json_cfg['base_port'] + json_cfg['sensors']['accel']
   context = zmq.Context()
   socket = context.socket(zmq.PUB)
-  socket.bind("tcp://127.0.0.1:{}".format(gyro_port))
-  print("Bound to port: {}".format(gyro_port))
+  socket.bind("tcp://127.0.0.1:{}".format(accel_port))
+  print("Bound to port: {}".format(accel_port))
 
   main_loop_kill.clear()
   signal.signal(signal.SIGINT, sig_int_handler)
@@ -66,7 +66,7 @@ def main() -> None:
     # socket.send(topic)
     socket.send_multipart([topic, data.SerializeToString()])
     print("Sent [{}, {}]".format(topic, data))
-    time.sleep(1)
+    time.sleep(0.01)
 
   print("Exiting the 'sim'")
 
