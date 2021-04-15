@@ -8,6 +8,7 @@
 #   4/8/21 | Brandon Braun | brandonbraun653@gmail.com
 # **********************************************************************************************************************
 
+from pint import UnitRegistry
 from VDrone.motors.abstract_motor import IMotor
 
 
@@ -21,5 +22,5 @@ class IdealMotor(IMotor):
         pass
 
     def step(self, control: float, dt: float) -> float:
-        pass
+        return control
 
