@@ -16,6 +16,7 @@ from pathlib import Path
 from threading import Event
 
 import numpy as np
+from VDrone.connection import SimConnection
 from VDrone.parameters import *
 from VDrone.database import *
 
@@ -37,6 +38,10 @@ def main() -> None:
     my_data = db.get(param_id=ParameterID.GYRO_DATA)
     print(my_data)
 
+    conn = SimConnection()
+    conn.start()
+    conn.connect(timeout=5.0)
+
     while not main_loop_kill.is_set():
         # topic = b'accel'
         #
@@ -48,8 +53,12 @@ def main() -> None:
         # # socket.send(topic)
         # socket.send_multipart([topic, data.SerializeToString()])
         # print("Sent [{}, {}]".format(topic, data))
+
+        # conn.transmit(parameter=)
         time.sleep(0.1)
 
+    conn.kill()
+    conn.join()
     print("Exiting the 'sim'")
 
 

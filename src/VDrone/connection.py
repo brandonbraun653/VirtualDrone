@@ -10,7 +10,8 @@
 
 import json
 import zmq
-from typing import Any
+from queue import Queue, Empty
+from typing import Union, List, Dict
 from pathlib import Path
 from loguru import logger
 from time import sleep
@@ -29,14 +30,23 @@ class SimConnection(Thread):
         """ Supported event signals for the simulator connection """
         KILL = auto()
 
-    class TxSockets(Enum):
+    class TxSocket(Enum):
         """ Supported sockets for transmitting data """
         SENSOR = "sensor"       # All system sensor data
 
-    class RxSockets(Enum):
+    class TxTopics(Enum):
+        """ Supported topics to publish data on for TX sockets """
+        GYRO_DATA = "gyro"
+
+    class RxSocket(Enum):
         """ Supported sockets for receiving data """
+        SIM_INTERNAL = "sim"                # Data exclusive to sim operations
         SYS_CONTROL = "system_control"      # System control input
         USER_INPUT = "user_input"           # User IO input. Think physical device interfaces (switches, button, etc)
+        
+    class RxTopics(Enum):
+        """ Supported topics to receive data on for RX sockets """
+        HEARTBEAT = "heartbeat"
 
     def __init__(self):
         """ Power up the drone class """
@@ -61,12 +71,19 @@ class SimConnection(Thread):
 
         # ZMQ Resources
         self._zmq_context = zmq.Context(io_threads=8)
-        self._zmq_pub_sockets = {key.value: self._zmq_context.socket(zmq.PUB) for key in self.TxSockets}
-        self._zmq_sub_sockets = {key.value: self._zmq_context.socket(zmq.SUB) for key in self.RxSockets}
+        self._zmq_pub_sockets = {key.value: self._zmq_context.socket(zmq.PUB) for key in self.TxSocket} # type: Dict[str, zmq.Socket]
+        self._zmq_sub_sockets = {key.value: self._zmq_context.socket(zmq.SUB) for key in self.RxSocket} # type: Dict[str, zmq.Socket]
         self._boot_zmq()
 
         # Flight controller connection status
         self._fcs_connected = TimedParameter(bool, initial_value=False, timeout=0.5)
+
+        # Data queues
+        self._tx_queue = Queue()    # type: Queue[IParameter]
+        self._rx_queue = Queue()    # type: Queue[IParameter]
+
+        # Network data map
+        self._data_map = SimData()
 
     def kill(self) -> None:
         """
@@ -84,31 +101,27 @@ class SimConnection(Thread):
             logger.info("Hello world")
         logger.info("Exiting the program")
 
-    def transmit(self, parameter, value, timestamp):
+    def transmit(self, data: IParameter) -> None:
         """
         Transmits a piece of data to the flight software
         Args:
-            parameter:
-            value:
-            timestamp:
+            data: Parameter instance to be transmitted
 
         Returns:
-
+            None
         """
-        # Cache the data as a copy in a queue. Don't look at the parameter manager
-        pass
+        self._tx_queue.put(data, block=True, timeout=0.05)
 
-    def receive(self, parameter) -> Any:
+    def receive(self) -> Union[IParameter, None]:
         """
-        Receives
-        Args:
-            parameter:
-
+        Receives data from the RX queue
         Returns:
-
+            IParameter or None
         """
-        # Pull out the copy from the queue
-        pass
+        try:
+            return self._rx_queue.get_nowait()
+        except Empty:
+            return None
 
     def signal_event(self, signal: Signals) -> None:
         """
@@ -130,6 +143,7 @@ class SimConnection(Thread):
             True: Successfully connected within the timeout window
             False: Did not connect or connection was rejected
         """
+        # Receive data until heart beat is found a few times, or timeout
         pass
 
     def is_connected(self) -> bool:
@@ -152,16 +166,18 @@ class SimConnection(Thread):
         port_format = "{}://{}".format(cfg['transport'], cfg['bind_ip'])
 
         # Configure the PUB sockets
-        for topic in self._zmq_pub_sockets.keys():
-            bind_to = "{}:{}".format(port_format, cfg['port'][topic])
-            self._zmq_pub_sockets[topic].bind(bind_to)
-            logger.debug("Bind pub socket [{}] to {}".format(topic, bind_to))
+        for socket in self._zmq_pub_sockets.keys():
+            bind_to = "{}:{}".format(port_format, cfg['port'][socket])
+            self._zmq_pub_sockets[socket].bind(bind_to)
+            logger.debug("Bind pub socket [{}] to {}".format(socket, bind_to))
 
         # Configure the SUB sockets
-        for topic in self._zmq_sub_sockets.keys():
-            conn_to = "{}:{}".format(port_format, cfg['port'][topic])
-            self._zmq_sub_sockets[topic].connect(conn_to)
-            logger.debug("Connect sub socket [{}] to {}".format(topic, conn_to))
+        for socket in self._zmq_sub_sockets.keys():
+            conn_to = "{}:{}".format(port_format, cfg['port'][socket])
+            self._zmq_sub_sockets[socket].connect(conn_to)
+            for topic in self._data_map.get_socket_subscriber_list(socket):
+                self._zmq_sub_sockets[socket].setsockopt(zmq.SUBSCRIBE, topic.value)
+            logger.debug("Connect sub socket [{}] to {}".format(socket, conn_to))
 
     def _rx_message_pump(self) -> None:
         """
@@ -169,6 +185,47 @@ class SimConnection(Thread):
         Returns:
             None
         """
+        # Check each socket for available data
+        for socket in self._zmq_sub_sockets.keys():
+            more_data = True
+            while more_data:
+                try:
+                    # Receive the next message from the socket
+                    msg = self._zmq_sub_sockets[socket].recv_multipart(flags=zmq.NOBLOCK)
+                    if len(msg) != 2 or not isinstance(msg, list):
+                        raise zmq.ZMQError()
+
+                    # Update the connection status if the heart beat is sent
+                    if msg[0] == self.RxTopics.HEARTBEAT.value:
+                        self._fcs_connected.update(True)
+                        continue
+
+                    # Reconstruct the data into the expected type
+                    param = self._parameter_factory(topic=self.RxTopics(msg[0]), serialized_data=msg[1])
+
+                    # Push to the queue
+                    if isinstance(param, IParameter):
+                        self._rx_queue.put(item=param, block=True, timeout=0.1)
+
+                except (zmq.ZMQError, ValueError):
+                    more_data = False
+
+    def _tx_message_pump(self) -> None:
+        """
+        Pulls items from the transmit queue and pushes it through the ZMQ connection
+        Returns:
+            None
+        """
+        while not self._tx_queue.empty():
+            param = self._tx_queue.get_nowait()
+
+            socket = self._data_map.get_socket_from_parameter(param.id)
+            topic = self._data_map.get_topic_from_parameter(param.id)
+
+            self._zmq_sub_sockets[socket.value].send_multipart([topic, param.serialize()])
+
+    def _parameter_factory(self, topic: RxTopics, serialized_data: str) -> Union[IParameter, None]:
+        # Make sure to log if not convertible
         pass
 
     @staticmethod
@@ -182,3 +239,31 @@ class SimConnection(Thread):
         config_file = Path(project_root, 'src', 'database', 'sim_ports.json')
         with config_file.open() as f:
             return json.load(f)
+
+
+class SimData:
+    """ A collection of mappings for data passed around through the sim """
+
+    def __init__(self):
+        self._mapping = {
+            "tx": {
+                SimConnection.TxSocket.SENSOR: {
+                    SimConnection.TxTopics.GYRO_DATA: {
+                        "type": GyroSample,
+                        "param_id": ParameterID.GYRO_DATA
+                    }
+                }
+            },
+            "rx": {
+
+            }
+        }
+
+    def get_socket_from_parameter(self, param_id: ParameterID) -> SimConnection.TxSocket:
+        pass
+
+    def get_topic_from_parameter(self, param_id: ParameterID) -> SimConnection.TxTopics:
+        pass
+
+    def get_socket_subscriber_list(self, socket_id: Union[SimConnection.RxSocket, str]) -> List[SimConnection.RxTopics]:
+        pass

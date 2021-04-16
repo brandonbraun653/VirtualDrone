@@ -67,6 +67,26 @@ class IParameter:
         with self._lock:
             return copy.deepcopy(self._param_data)
 
+    def serialize(self) -> str:
+        """
+        Serializes the parameter data for transmission via the network protocol
+        Returns:
+            str
+        """
+        return ""
+
+    def deserialize(self, data: str) -> bool:
+        """
+        Converts the protobuf data into the format used in the simulator
+        Args:
+            data: Serialized protobuf data
+
+        Returns:
+            True: The conversion was successful
+            False: The conversion was not successful
+        """
+        return False
+
     @abstractmethod
     def is_valid(self) -> bool:
         """
@@ -90,33 +110,6 @@ class IParameter:
     @property
     def param_type(self):
         return self._param_type
-
-
-class ISerializedParameter:
-    """ Interface for accessing parameter data for use with protocol buffers """
-    __metaclass__ = ABCMeta
-
-    @abstractmethod
-    def serialize(self) -> str:
-        """
-        Serializes the parameter data for transmission via the network protocol
-        Returns:
-            str
-        """
-        raise NotImplementedError
-
-    @abstractmethod
-    def deserialize(self, data: str) -> bool:
-        """
-        Converts the protobuf data into the format used in the simulator
-        Args:
-            data: Serialized protobuf data
-
-        Returns:
-            True: The conversion was successful
-            False: The conversion was not successful
-        """
-        raise NotImplementedError
 
 
 class DefaultParameter(IParameter):
@@ -193,7 +186,7 @@ class TimedParameter(IParameter):
             return (time.time() - self._last_update) < self._param_timeout
 
 
-class GyroData(TimedParameter, ISerializedParameter):
+class GyroData(TimedParameter):
     """ Stores gyroscope data with a validity timeout """
 
     KEY_X = 0
