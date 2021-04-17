@@ -196,3 +196,162 @@
 2021-04-15 12:47:39.271 | DEBUG    | VDrone.connection:kill:78 - Drone kill signal set
 2021-04-15 12:47:40.175 | INFO     | VDrone.connection:run:84 - Hello world
 2021-04-15 12:47:40.176 | INFO     | VDrone.connection:run:85 - Exiting the program
+2021-04-17 10:11:55.968 | DEBUG    | VDrone.connection:_boot_zmq:187 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-17 10:13:09.275 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-17 10:13:09.275 | ERROR    | VDrone.connection:_boot_zmq:186 - Missing port configuration for tx_sim
+2021-04-17 10:16:35.150 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-17 10:16:35.150 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-17 10:17:02.628 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-17 10:17:02.629 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-17 10:17:38.569 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-17 10:17:38.570 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-17 10:17:38.570 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-17 10:20:46.988 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-17 10:20:46.989 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-17 10:20:46.989 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-17 10:20:46.989 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-17 10:20:46.990 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-17 10:20:46.991 | INFO     | VDrone.connection:run:111 - Executing the SimConnection thread
+2021-04-17 10:24:35.264 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-17 10:24:35.265 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-17 10:24:35.265 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-17 10:24:35.265 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-17 10:24:35.266 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-17 10:24:36.183 | INFO     | VDrone.connection:run:111 - Executing the SimConnection thread
+2021-04-17 10:27:09.086 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-17 10:27:09.086 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-17 10:27:09.087 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-17 10:27:09.087 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-17 10:27:09.087 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-17 10:27:10.706 | INFO     | VDrone.connection:run:111 - Executing the SimConnection thread
+2021-04-17 10:27:26.246 | ERROR    | VDrone.connection:_tx_message_pump:248 - Transmit message pump raised exception: 'numpy.ndarray' object has no attribute 'id'
+2021-04-17 10:33:29.887 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-17 10:33:29.887 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-17 10:33:29.888 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-17 10:33:29.888 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-17 10:33:29.888 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-17 10:33:32.108 | INFO     | VDrone.connection:run:111 - Executing the SimConnection thread
+2021-04-17 10:55:02.647 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-17 10:55:02.648 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-17 10:55:02.648 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-17 10:55:02.648 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-17 10:55:02.649 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-17 10:55:02.650 | INFO     | VDrone.connection:run:111 - Executing the SimConnection thread
+2021-04-17 10:55:50.883 | ERROR    | VDrone.connection:_tx_message_pump:248 - 'sensor'
+2021-04-17 10:57:35.989 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-17 10:57:35.989 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-17 10:57:35.990 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-17 10:57:35.990 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-17 10:57:35.990 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-17 10:57:35.991 | INFO     | VDrone.connection:run:111 - Executing the SimConnection thread
+2021-04-17 10:57:36.732 | ERROR    | VDrone.connection:_tx_message_pump:248 - KeyError exception: 'sensor'
+2021-04-17 10:59:25.669 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-17 10:59:25.669 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-17 10:59:25.670 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-17 10:59:25.670 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-17 10:59:25.670 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-17 10:59:25.672 | INFO     | VDrone.connection:run:111 - Executing the SimConnection thread
+2021-04-17 10:59:26.858 | ERROR    | VDrone.connection:_tx_message_pump:248 - AttributeError exception: data
+2021-04-17 11:00:46.039 | ERROR    | VDrone.connection:_tx_message_pump:248 - AttributeError exception: data
+2021-04-17 11:02:02.119 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-17 11:02:02.120 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-17 11:02:02.120 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-17 11:02:02.121 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-17 11:02:02.121 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-17 11:02:02.122 | INFO     | VDrone.connection:run:111 - Executing the SimConnection thread
+2021-04-17 11:06:26.202 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-17 11:06:26.202 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-17 11:06:26.203 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-17 11:06:26.203 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-17 11:06:26.203 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-17 11:06:26.205 | INFO     | VDrone.connection:run:111 - Executing the SimConnection thread
+2021-04-17 11:06:31.631 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:31.633 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:32.638 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:33.642 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:34.640 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:35.637 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:36.645 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:37.643 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:38.648 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:39.651 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:40.650 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:41.649 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:42.651 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:43.652 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:44.656 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:45.659 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:46.656 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:47.656 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:48.661 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:49.658 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:50.663 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:51.667 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:52.663 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:53.662 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:54.662 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:55.669 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:56.664 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:57.667 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:58.674 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:06:59.672 | ERROR    | VDrone.connection:_tx_message_pump:249 - TypeError exception: Frame 0 ('gyro') does not support the buffer interface.
+2021-04-17 11:07:00.667 | DEBUG    | VDrone.connection:kill:108 - Drone kill signal set
+2021-04-17 11:07:00.668 | INFO     | VDrone.connection:run:117 - Exiting the program
+2021-04-17 11:10:26.532 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-17 11:10:26.533 | DEBUG    | VDrone.connection:_boot_zmq:189 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-17 11:10:26.533 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-17 11:10:26.533 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-17 11:10:26.534 | DEBUG    | VDrone.connection:_boot_zmq:199 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-17 11:10:26.535 | INFO     | VDrone.connection:run:111 - Executing the SimConnection thread
+2021-04-17 11:16:44.001 | DEBUG    | VDrone.connection:_boot_zmq:191 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-17 11:16:44.002 | DEBUG    | VDrone.connection:_boot_zmq:191 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-17 11:16:44.002 | DEBUG    | VDrone.connection:_boot_zmq:201 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-17 11:16:44.002 | DEBUG    | VDrone.connection:_boot_zmq:201 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-17 11:16:44.003 | DEBUG    | VDrone.connection:_boot_zmq:201 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-17 11:16:44.004 | INFO     | VDrone.connection:run:113 - Executing the SimConnection thread
+2021-04-17 11:16:47.415 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:07.498 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:07.500 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:08.509 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:09.510 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:10.508 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:11.513 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:12.509 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:13.513 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:14.518 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:15.510 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:16.518 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:17.514 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:18.523 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:19.519 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:20.519 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:21.520 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:22.525 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:23.522 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:24.531 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:25.528 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:26.526 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:27.533 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:28.527 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:29.526 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:30.534 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:31.532 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:32.529 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:33.531 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:34.531 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:35.535 | TRACE    | VDrone.connection:_tx_message_pump:249 - Send -- Topic: gyro
+2021-04-17 11:17:36.533 | DEBUG    | VDrone.connection:kill:110 - Drone kill signal set
+2021-04-17 11:17:36.541 | INFO     | VDrone.connection:run:119 - Exiting the program
+2021-04-17 11:19:27.222 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-17 11:19:27.222 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-17 11:19:27.222 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-17 11:19:27.222 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-17 11:19:27.223 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-17 11:19:27.223 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-17 11:19:27.223 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-17 11:19:28.225 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-17 11:19:29.234 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-17 11:19:30.228 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-17 11:19:31.231 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-17 11:19:32.229 | DEBUG    | VDrone.connection:kill:107 - Drone kill signal set
+2021-04-17 11:19:32.231 | INFO     | VDrone.connection:run:116 - Exiting the program

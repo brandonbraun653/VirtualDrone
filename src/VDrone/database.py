@@ -9,6 +9,7 @@
 # **********************************************************************************************************************
 
 import collections
+import copy
 from threading import RLock
 from typing import Callable, Any, DefaultDict, List
 from enum import Enum
@@ -53,13 +54,20 @@ class Entry:
         return self._param_id
 
     @property
+    def param_data(self):
+        with self._lock:
+            return copy.deepcopy(self._param_data)
+
+    @property
     def validity(self) -> bool:
         # TODO: Walk the dependency tree to determine validity
-        return self._param_data.is_valid()
+        with self._lock:
+            return self._param_data.is_valid()
 
     @property
     def depends(self) -> List[ParameterID]:
-        return self._dependencies
+        with self._lock:
+            return self._dependencies
 
     def register_listener(self, event_id: Events, callback: Callable[[ParameterID], None]) -> None:
         """
@@ -89,12 +97,13 @@ class Entry:
             self._callbacks[event_id].remove(callback)
 
     def update(self, new_value: Any) -> bool:
-        updated = self._param_data.update(new_value=new_value)
-        if updated:
-            self._notify_listeners(Events.UPDATE)
-        else:
-            self._notify_listeners(Events.ERROR)
-        return updated
+        with self._lock:
+            updated = self._param_data.update(new_value=new_value)
+            if updated:
+                self._notify_listeners(Events.UPDATE)
+            else:
+                self._notify_listeners(Events.ERROR)
+            return updated
 
     def value(self) -> Any:
         with self._lock:
@@ -126,14 +135,22 @@ class ParameterDatabase:
         with self._lock:
             return self._database[param_id].update(new_value=new_value)
 
-    def get(self, param_id: ParameterID) -> Any:
-        with self._lock:
-            return self._database[param_id].value()
+    def get_value(self, param_id: ParameterID) -> Any:
+        return self._database[param_id].value()
+
+    def get_param(self, param_id: ParameterID) -> IParameter:
+        """
+        Gets a copy of the underlying parameter storage class
+        Args:
+            param_id: Which parameter to look up
+
+        Returns:
+            IParameter
+        """
+        return self._database[param_id].param_data
 
     def is_valid(self, param_id: ParameterID) -> bool:
-        with self._lock:
-            return self._database[param_id].validity
+        return self._database[param_id].validity
 
     def dependency_list(self, param_id: ParameterID) -> List[ParameterID]:
-        with self._lock:
-            return self._database[param_id].depends
+        return self._database[param_id].depends

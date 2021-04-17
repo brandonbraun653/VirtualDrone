@@ -8,14 +8,12 @@
 #   4/13/21 | Brandon Braun | brandonbraun653@gmail.com
 # **********************************************************************************************************************
 
+import sys
 import signal
-import random
-import time
-
+import numpy as np
+from loguru import logger
 from pathlib import Path
 from threading import Event
-
-import numpy as np
 from VDrone.connection import SimConnection
 from VDrone.parameters import *
 from VDrone.database import *
@@ -35,27 +33,15 @@ def main() -> None:
     db = ParameterDatabase()
     db.create(entry=Entry(param_id=ParameterID.GYRO_DATA, param_data=GyroData(timeout=0.5)))
     db.set(param_id=ParameterID.GYRO_DATA, new_value=np.zeros((3, 1)))
-    my_data = db.get(param_id=ParameterID.GYRO_DATA)
-    print(my_data)
+    gyro_data = db.get_param(param_id=ParameterID.GYRO_DATA)
 
     conn = SimConnection()
     conn.start()
     conn.connect(timeout=5.0)
 
     while not main_loop_kill.is_set():
-        # topic = b'accel'
-        #
-        # data = ahrs_pb2.GyroSample()
-        # data.x = random.uniform(-10.0, 10.0)
-        # data.y = random.uniform(-10.0, 10.0)
-        # data.z = random.uniform(-10.0, 10.0)
-        #
-        # # socket.send(topic)
-        # socket.send_multipart([topic, data.SerializeToString()])
-        # print("Sent [{}, {}]".format(topic, data))
-
-        # conn.transmit(parameter=)
-        time.sleep(0.1)
+        conn.transmit(gyro_data)
+        time.sleep(1)
 
     conn.kill()
     conn.join()
@@ -63,4 +49,6 @@ def main() -> None:
 
 
 if __name__ == '__main__':
+    logger.remove()
+    logger.add(sys.stdout, level="TRACE")
     main()

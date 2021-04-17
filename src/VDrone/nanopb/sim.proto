@@ -1,0 +1,6 @@
+syntax = "proto2";
+
+message HeartBeat
+{
+  required uint32 timestamp = 1;
+}

@@ -15,13 +15,19 @@ from abc import ABCMeta, abstractmethod
 from typing import Any
 from threading import RLock
 from enum import Enum, auto
-from VDrone.nanopb.ahrs_pb2 import GyroSample
+from VDrone.nanopb.sim_pb2 import HeartBeat
+from VDrone.nanopb.ahrs_pb2 import GyroSample, AccelSample, MagSample
 from google.protobuf.message import DecodeError
 
 
 class ParameterID(Enum):
     """ List of supported parameters that the system maintains info on"""
     INVALID = 0
+
+    # Simulator Internals
+    HEARTBEAT = auto()
+
+    # Sensor measurements
     ACCEL_DATA = auto()
     GYRO_DATA = auto()
     MAG_DATA = auto()
@@ -38,7 +44,6 @@ class IParameter:
         """
         self._param_type = param_type
         self._param_data = None
-        self._lock = RLock()
 
     def update(self, new_value: Any) -> bool:
         """
@@ -50,12 +55,11 @@ class IParameter:
             True: Update was successful
             False: Update was not successful
         """
-        with self._lock:
-            if isinstance(new_value, self._param_type):
-                self._param_data = copy.deepcopy(new_value)
-                return True
-            else:
-                return False
+        if isinstance(new_value, self._param_type):
+            self._param_data = copy.deepcopy(new_value)
+            return True
+        else:
+            return False
 
     def value(self) -> Any:
         """
@@ -64,8 +68,7 @@ class IParameter:
         Returns:
             A copy of the stored data
         """
-        with self._lock:
-            return copy.deepcopy(self._param_data)
+        return copy.deepcopy(self._param_data)
 
     def serialize(self) -> str:
         """
@@ -134,8 +137,7 @@ class DefaultParameter(IParameter):
             True: Data is valid
             False: Data is not valid
         """
-        with self._lock:
-            return self._param_data is not None
+        return self._param_data is not None
 
 
 class TimedParameter(IParameter):
@@ -167,13 +169,12 @@ class TimedParameter(IParameter):
             True: Update was successful
             False: Update was not successful
         """
-        with self._lock:
-            if isinstance(new_value, self._param_type):
-                self._param_data = new_value
-                self._last_update = time.time()
-                return True
-            else:
-                return False
+        if isinstance(new_value, self._param_type):
+            self._param_data = new_value
+            self._last_update = time.time()
+            return True
+        else:
+            return False
 
     def is_valid(self) -> bool:
         """
@@ -182,8 +183,41 @@ class TimedParameter(IParameter):
             True: Data has been consistently updated
             False: Data has not been updated within the timeout window
         """
-        with self._lock:
-            return (time.time() - self._last_update) < self._param_timeout
+        return (time.time() - self._last_update) < self._param_timeout
+
+
+class HeartBeatData(TimedParameter):
+    """ Stores a virtual heart beat signal that indicates the sim is alive """
+
+    def __init__(self, timeout: float or int = 1.0):
+        super().__init__(param_type=int, initial_value=0, timeout=timeout)
+        self._protobuf_data = HeartBeat()
+
+    @property
+    def id(self):
+        return ParameterID.HEARTBEAT
+
+    def serialize(self) -> str:
+        self.update(new_value=time.time())
+        self._protobuf_data.data.timestamp = self.value()
+        return self._protobuf_data.SerializeToString()
+
+    def deserialize(self, data: str) -> bool:
+        """
+        Converts the protobuf gyro data into the format used in the simulator
+        Args:
+            data: Serialized protobuf data
+
+        Returns:
+            True: The conversion was successful
+            False: The conversion was not successful
+        """
+        try:
+            parsed_bytes = self._protobuf_data.ParseFromString(data)
+        except DecodeError:
+            return False
+
+        return self.update(new_value=self._protobuf_data.data.timestamp)
 
 
 class GyroData(TimedParameter):
@@ -200,6 +234,96 @@ class GyroData(TimedParameter):
     @property
     def id(self):
         return ParameterID.GYRO_DATA
+
+    def serialize(self) -> str:
+        raw_data = self.value()
+        self._protobuf_data.x = raw_data[self.KEY_X]
+        self._protobuf_data.y = raw_data[self.KEY_Y]
+        self._protobuf_data.z = raw_data[self.KEY_Z]
+        return self._protobuf_data.SerializeToString()
+
+    def deserialize(self, data: str) -> bool:
+        """
+        Converts the protobuf gyro data into the format used in the simulator
+        Args:
+            data: Serialized protobuf data
+
+        Returns:
+            True: The conversion was successful
+            False: The conversion was not successful
+        """
+        try:
+            parsed_bytes = self._protobuf_data.ParseFromString(data)
+        except DecodeError:
+            return False
+
+        raw_data = self.param_type()
+        raw_data[self.KEY_X] = self._protobuf_data.x
+        raw_data[self.KEY_Y] = self._protobuf_data.y
+        raw_data[self.KEY_Z] = self._protobuf_data.z
+
+        return self.update(new_value=raw_data)
+
+
+class AccelData(TimedParameter):
+    """ Stores accelerometer data with a validity timeout """
+
+    KEY_X = 0
+    KEY_Y = 1
+    KEY_Z = 2
+
+    def __init__(self, timeout: float or int = 1.0):
+        super().__init__(param_type=type(np.ndarray((3, 1))), initial_value=np.zeros((3, 1)), timeout=timeout)
+        self._protobuf_data = AccelSample()
+
+    @property
+    def id(self):
+        return ParameterID.ACCEL_DATA
+
+    def serialize(self) -> str:
+        raw_data = self.value()
+        self._protobuf_data.data.x = raw_data[self.KEY_X]
+        self._protobuf_data.data.y = raw_data[self.KEY_Y]
+        self._protobuf_data.data.z = raw_data[self.KEY_Z]
+        return self._protobuf_data.SerializeToString()
+
+    def deserialize(self, data: str) -> bool:
+        """
+        Converts the protobuf gyro data into the format used in the simulator
+        Args:
+            data: Serialized protobuf data
+
+        Returns:
+            True: The conversion was successful
+            False: The conversion was not successful
+        """
+        try:
+            parsed_bytes = self._protobuf_data.ParseFromString(data)
+        except DecodeError:
+            return False
+
+        raw_data = self.param_type()
+        raw_data[self.KEY_X] = self._protobuf_data.data.x
+        raw_data[self.KEY_Y] = self._protobuf_data.data.y
+        raw_data[self.KEY_Z] = self._protobuf_data.data.z
+
+        return self.update(new_value=raw_data)
+
+
+class MagData(TimedParameter):
+    """ Stores magnetometer data with a validity timeout """
+
+    KEY_X = 0
+    KEY_Y = 1
+    KEY_Z = 2
+
+    def __init__(self, timeout: float or int = 1.0):
+        super().__init__(param_type=type(np.ndarray((3, 1))), initial_value=np.zeros((3, 1)), timeout=timeout)
+        self._protobuf_data = MagSample()
+
+    @property
+    def id(self):
+        return ParameterID.MAG_DATA
 
     def serialize(self) -> str:
         raw_data = self.value()
