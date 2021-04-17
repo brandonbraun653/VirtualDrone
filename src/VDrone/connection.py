@@ -10,6 +10,7 @@
 
 import json
 import zmq
+from pyutils.path import find_parent_path
 from queue import Queue, Empty
 from typing import Union, List, Dict
 from pathlib import Path
@@ -18,7 +19,6 @@ from time import sleep
 from enum import Enum, IntEnum, auto
 from threading import Thread, Event
 from VDrone.parameters import *
-from VDrone.utility import find_parent_path
 
 
 class SimConnection(Thread):
