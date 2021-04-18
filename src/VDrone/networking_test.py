@@ -33,15 +33,21 @@ def main() -> None:
     db = ParameterDatabase()
     db.create(entry=Entry(param_id=ParameterID.GYRO_DATA, param_data=GyroData(timeout=0.5)))
     db.set(param_id=ParameterID.GYRO_DATA, new_value=np.zeros((3, 1)))
+
+    db.create(entry=Entry(param_id=ParameterID.HEARTBEAT, param_data=HeartBeatData()))
+    db.set(param_id=ParameterID.HEARTBEAT, new_value=time.time())
+
     gyro_data = db.get_param(param_id=ParameterID.GYRO_DATA)
+    hb_data = db.get_param(param_id=ParameterID.HEARTBEAT)
 
     conn = SimConnection()
     conn.start()
     conn.connect(timeout=5.0)
 
     while not main_loop_kill.is_set():
-        conn.transmit(gyro_data)
-        time.sleep(1)
+        #conn.transmit(gyro_data)
+        conn.transmit(hb_data)
+        time.sleep(0.250)
 
     conn.kill()
     conn.join()

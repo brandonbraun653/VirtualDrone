@@ -243,11 +243,15 @@ class SimConnection(Thread):
         while not self._tx_queue.empty():
             try:
                 param = self._tx_queue.get_nowait()
+                if not param:
+                    continue
 
                 socket = self._data_map.get_socket_from_parameter(param.id)
                 topic = self._data_map.get_topic_from_parameter(param.id)
 
-                self._zmq_pub_sockets[socket.value].send_multipart([topic.value.encode('utf-8'), param.serialize()])
+                encoded_topic = topic.value.encode('utf-8')
+                serialized_data = param.serialize()
+                self._zmq_pub_sockets[socket.value].send_multipart([encoded_topic, serialized_data])
                 logger.trace("Send -- Topic: {}".format(topic.value))
             except Exception as e:
                 logger.error("{} exception: {}".format(type(e).__name__, str(e)))

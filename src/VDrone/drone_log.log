@@ -821,3 +821,413 @@
 2021-04-18 10:27:55.060 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
 2021-04-18 10:27:56.054 | DEBUG    | VDrone.connection:kill:107 - Drone kill signal set
 2021-04-18 10:27:56.055 | INFO     | VDrone.connection:run:116 - Exiting the program
+2021-04-18 15:19:56.880 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 15:19:56.881 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 15:19:56.882 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 15:19:56.882 | DEBUG    | VDrone.connection:_boot_zmq:203 - Subscribed socket rx_sim to topic rx_heartbeat
+2021-04-18 15:19:56.882 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 15:19:56.882 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 15:19:56.884 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 15:19:56.885 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:19:57.888 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:19:58.886 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:19:59.890 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:20:00.898 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:20:01.896 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:20:02.896 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:20:03.891 | DEBUG    | VDrone.connection:kill:107 - Drone kill signal set
+2021-04-18 15:20:03.896 | INFO     | VDrone.connection:run:116 - Exiting the program
+2021-04-18 15:22:46.943 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 15:22:46.943 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 15:22:46.943 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 15:22:46.943 | DEBUG    | VDrone.connection:_boot_zmq:203 - Subscribed socket rx_sim to topic rx_heartbeat
+2021-04-18 15:22:46.943 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 15:22:46.944 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 15:22:46.944 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 15:22:46.944 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:22:47.946 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:22:48.948 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:22:49.949 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:22:50.954 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:22:51.959 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:22:52.960 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:22:53.952 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:22:54.958 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:22:55.952 | DEBUG    | VDrone.connection:kill:107 - Drone kill signal set
+2021-04-18 15:22:55.957 | INFO     | VDrone.connection:run:116 - Exiting the program
+2021-04-18 15:24:46.413 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 15:24:46.413 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 15:24:46.413 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 15:24:46.414 | DEBUG    | VDrone.connection:_boot_zmq:203 - Subscribed socket rx_sim to topic rx_heartbeat
+2021-04-18 15:24:46.414 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 15:24:46.414 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 15:24:46.414 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 15:24:46.415 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:24:46.415 | ERROR    | VDrone.connection:_tx_message_pump:253 - AttributeError exception: data
+2021-04-18 15:24:47.419 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:24:47.420 | ERROR    | VDrone.connection:_tx_message_pump:253 - AttributeError exception: data
+2021-04-18 15:24:48.422 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:24:48.423 | ERROR    | VDrone.connection:_tx_message_pump:253 - AttributeError exception: data
+2021-04-18 15:24:49.421 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:24:49.422 | ERROR    | VDrone.connection:_tx_message_pump:253 - AttributeError exception: data
+2021-04-18 15:24:50.419 | DEBUG    | VDrone.connection:kill:107 - Drone kill signal set
+2021-04-18 15:24:50.428 | INFO     | VDrone.connection:run:116 - Exiting the program
+2021-04-18 15:25:41.222 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 15:25:41.222 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 15:25:41.223 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 15:25:41.223 | DEBUG    | VDrone.connection:_boot_zmq:203 - Subscribed socket rx_sim to topic rx_heartbeat
+2021-04-18 15:25:41.223 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 15:25:41.224 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 15:25:41.226 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 15:25:41.226 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:26:06.381 | ERROR    | VDrone.connection:_tx_message_pump:253 - AttributeError exception: data
+2021-04-18 15:26:08.012 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:26:17.731 | ERROR    | VDrone.connection:_tx_message_pump:253 - AttributeError exception: data
+2021-04-18 15:26:19.606 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 15:28:28.568 | DEBUG    | VDrone.connection:kill:107 - Drone kill signal set
+2021-04-18 15:29:06.161 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 15:29:06.162 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 15:29:06.162 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 15:29:06.162 | DEBUG    | VDrone.connection:_boot_zmq:203 - Subscribed socket rx_sim to topic rx_heartbeat
+2021-04-18 15:29:06.163 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 15:29:06.163 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 15:29:06.167 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 15:30:07.232 | DEBUG    | VDrone.connection:kill:107 - Drone kill signal set
+2021-04-18 15:30:09.693 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 15:30:09.693 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 15:30:09.694 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 15:30:09.694 | DEBUG    | VDrone.connection:_boot_zmq:203 - Subscribed socket rx_sim to topic rx_heartbeat
+2021-04-18 15:30:09.694 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 15:30:09.695 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 15:30:09.698 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 15:30:21.710 | DEBUG    | VDrone.connection:kill:107 - Drone kill signal set
+2021-04-18 15:30:23.655 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 15:30:23.656 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 15:30:23.656 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 15:30:23.656 | DEBUG    | VDrone.connection:_boot_zmq:203 - Subscribed socket rx_sim to topic rx_heartbeat
+2021-04-18 15:30:23.657 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 15:30:23.657 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 15:30:23.661 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 15:30:38.675 | DEBUG    | VDrone.connection:kill:107 - Drone kill signal set
+2021-04-18 15:30:41.246 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 15:30:41.247 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 15:30:41.247 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 15:30:41.247 | DEBUG    | VDrone.connection:_boot_zmq:203 - Subscribed socket rx_sim to topic rx_heartbeat
+2021-04-18 15:30:41.247 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 15:30:41.248 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 15:30:41.252 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 15:31:02.960 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 15:31:02.961 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 15:31:02.961 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 15:31:02.961 | DEBUG    | VDrone.connection:_boot_zmq:203 - Subscribed socket rx_sim to topic rx_heartbeat
+2021-04-18 15:31:02.961 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 15:31:02.962 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 15:31:02.966 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 15:31:21.353 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 15:31:21.353 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 15:31:21.354 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 15:31:21.354 | DEBUG    | VDrone.connection:_boot_zmq:203 - Subscribed socket rx_sim to topic rx_heartbeat
+2021-04-18 15:31:21.354 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 15:31:21.354 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 15:31:21.358 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 15:31:30.480 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:30.480 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:30.480 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:30.481 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:30.481 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:30.481 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:30.482 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:30.482 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:30.482 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:30.482 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:31.379 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:32.372 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:33.380 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:34.376 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:35.381 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:36.382 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:37.386 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:38.387 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:39.385 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:40.386 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:41.381 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:42.386 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:43.384 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:44.392 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:45.391 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:46.388 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:47.389 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:48.388 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:49.395 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:50.389 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:51.397 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:52.392 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:53.395 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:54.394 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:55.396 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:56.405 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:57.402 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:58.397 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:31:59.408 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:00.409 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:01.400 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:02.402 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:03.405 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:04.404 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:05.409 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:06.407 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:07.415 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:08.415 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:09.416 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:10.410 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:11.418 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:12.418 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:13.415 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:14.420 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:15.418 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:16.419 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:17.418 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:18.424 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:19.430 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:20.430 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:21.426 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:22.426 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:23.431 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:24.433 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:25.429 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:26.431 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:27.432 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:28.437 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:29.435 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:30.432 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:31.433 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:32.437 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:33.434 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:34.436 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:35.443 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:36.443 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:37.445 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:38.440 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:39.443 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:40.443 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:41.450 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:42.445 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:43.446 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:44.449 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:45.456 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:46.452 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:47.452 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:48.458 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:49.459 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:50.463 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:51.462 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:52.462 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:53.462 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:54.464 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:55.458 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:56.463 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:57.469 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:58.462 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:32:59.470 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:00.466 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:01.472 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:02.474 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:03.467 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:04.469 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:05.472 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:06.472 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:07.471 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:08.480 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:09.475 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:10.478 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:11.478 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:12.486 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:13.483 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:14.478 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:15.484 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:16.485 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:17.482 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:18.486 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:19.487 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:20.487 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:21.490 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:22.489 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:23.491 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:24.495 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:25.496 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:26.496 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:27.497 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:28.497 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:29.501 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:30.497 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:31.505 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:32.504 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:33.502 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:34.501 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:35.502 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:36.503 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:37.504 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:38.505 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:39.506 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:40.510 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:41.509 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:42.512 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:43.519 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:44.519 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:45.518 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:46.515 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:47.516 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:48.516 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:49.517 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:50.519 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:51.526 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:52.526 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:53.531 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:54.527 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:55.524 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:56.532 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:57.530 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:58.531 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:33:59.534 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:00.530 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:01.533 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:02.537 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:03.536 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:04.541 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:05.538 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:06.538 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:07.538 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:08.547 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:09.537 | DEBUG    | VDrone.connection:kill:107 - Drone kill signal set
+2021-04-18 15:34:09.547 | INFO     | VDrone.connection:run:116 - Exiting the program
+2021-04-18 15:34:31.833 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 15:34:31.833 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 15:34:31.833 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 15:34:31.834 | DEBUG    | VDrone.connection:_boot_zmq:203 - Subscribed socket rx_sim to topic rx_heartbeat
+2021-04-18 15:34:31.834 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 15:34:31.834 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 15:34:31.834 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 15:34:31.834 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:32.094 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:32.344 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:32.595 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:32.846 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:33.088 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:33.339 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:33.590 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:33.847 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:34.095 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:34.346 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:34.598 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:34.847 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:35.098 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:35.350 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:35.601 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:35.852 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:36.093 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:36.345 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:36.597 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:36.848 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:37.099 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:37.349 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:37.600 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:37.852 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:38.104 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:38.352 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:38.603 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:38.852 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:39.100 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:39.351 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:39.599 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:39.849 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:40.107 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:40.355 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:40.610 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:40.854 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:41.108 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:41.353 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:41.607 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:41.861 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:42.106 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:42.360 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:42.609 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:42.860 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:43.111 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:43.362 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:43.612 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:43.864 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:44.114 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:44.366 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:44.616 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:44.864 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:45.109 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:45.361 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:45.612 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:45.862 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:46.114 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:46.365 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:46.616 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:46.868 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:47.115 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:47.370 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:47.614 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:47.868 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:48.112 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:48.366 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:48.619 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:48.864 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:49.122 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:49.369 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:49.615 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:49.873 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:50.122 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:50.372 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:50.620 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:50.869 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:51.120 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:51.369 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:51.618 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:51.868 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:52.124 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:52.374 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:52.624 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:52.874 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:53.125 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:53.374 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:53.623 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:53.873 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:54.129 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:54.378 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:54.626 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:54.876 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:55.132 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:55.383 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:55.632 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:55.883 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:56.133 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:56.382 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:56.632 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:56.881 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:57.130 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:57.380 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:57.629 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:57.880 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:58.138 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:58.387 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:58.635 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:58.884 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:59.134 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:59.381 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:59.638 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:34:59.886 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:35:00.134 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:35:00.382 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:35:00.640 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:35:00.888 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:35:01.136 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:35:01.384 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:35:01.642 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:35:01.890 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:35:02.139 | TRACE    | VDrone.connection:_tx_message_pump:255 - Send -- Topic: tx_heartbeat
+2021-04-18 15:35:02.384 | DEBUG    | VDrone.connection:kill:107 - Drone kill signal set
+2021-04-18 15:35:02.388 | INFO     | VDrone.connection:run:116 - Exiting the program

@@ -199,7 +199,7 @@ class HeartBeatData(TimedParameter):
 
     def serialize(self) -> str:
         self.update(new_value=time.time())
-        self._protobuf_data.data.timestamp = self.value()
+        self._protobuf_data.timestamp = self.value()
         return self._protobuf_data.SerializeToString()
 
     def deserialize(self, data: str) -> bool:
