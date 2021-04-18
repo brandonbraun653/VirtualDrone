@@ -10,6 +10,7 @@ gen_static_lib_variants(
     vdrone_nanopb_proto
   SOURCES
     ahrs.pb.c                       # Generated source
+    sim.pb.c                        # Generated source
     ${NANO_PB_ROOT}/pb_common.c
     ${NANO_PB_ROOT}/pb_decode.c
     ${NANO_PB_ROOT}/pb_encode.c
