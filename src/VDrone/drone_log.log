@@ -355,3 +355,469 @@
 2021-04-17 11:19:31.231 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
 2021-04-17 11:19:32.229 | DEBUG    | VDrone.connection:kill:107 - Drone kill signal set
 2021-04-17 11:19:32.231 | INFO     | VDrone.connection:run:116 - Exiting the program
+2021-04-18 09:15:34.549 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 09:15:34.549 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 09:15:34.549 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 09:15:34.549 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 09:15:34.549 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 09:15:34.550 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 09:15:34.550 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:35.561 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:36.562 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:37.554 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:38.564 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:39.564 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:40.565 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:41.566 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:42.567 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:43.558 | DEBUG    | VDrone.connection:kill:107 - Drone kill signal set
+2021-04-18 09:15:43.566 | INFO     | VDrone.connection:run:116 - Exiting the program
+2021-04-18 09:15:49.281 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 09:15:49.281 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 09:15:49.282 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 09:15:49.282 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 09:15:49.282 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 09:15:49.284 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 09:15:49.285 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:50.289 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:51.291 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:52.289 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:53.292 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:54.298 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:55.293 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:56.294 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:57.302 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:58.294 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:15:59.297 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:00.299 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:01.302 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:02.303 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:03.301 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:04.303 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:05.307 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:06.305 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:07.309 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:08.309 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:09.310 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:10.313 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:11.308 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:12.312 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:13.311 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:14.312 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:15.314 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:16.316 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:17.318 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:18.315 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:19.321 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:20.323 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:21.320 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:22.319 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:23.321 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:24.321 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:25.322 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:26.323 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:27.323 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:28.324 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:29.331 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:30.330 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:31.331 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:32.332 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:33.332 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:34.334 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:35.338 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:36.333 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:37.339 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:38.334 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:39.338 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:40.346 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:41.347 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:42.338 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:43.340 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:44.349 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:45.345 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:46.347 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:47.353 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:48.348 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:49.355 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:50.356 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:16:51.357 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:17:39.284 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 09:17:39.285 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 09:17:39.285 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 09:17:39.285 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 09:17:39.286 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 09:17:39.287 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 09:17:39.288 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:17:40.291 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:17:41.293 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:17:42.294 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:17:43.297 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:17:44.299 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:17:45.293 | DEBUG    | VDrone.connection:kill:107 - Drone kill signal set
+2021-04-18 09:17:45.300 | INFO     | VDrone.connection:run:116 - Exiting the program
+2021-04-18 09:17:48.684 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 09:17:48.685 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 09:17:48.686 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 09:17:48.686 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 09:17:48.687 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 09:17:48.688 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 09:18:13.483 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:18:13.484 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:18:13.485 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:18:15.124 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:18:18.417 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:18:18.417 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:18:18.418 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:18:18.419 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:18:20.542 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:18:22.120 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:18:22.121 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:18:26.713 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:18:26.715 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:18:26.716 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:18:26.716 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:18:27.631 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:18:28.640 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:58:34.587 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 09:58:34.588 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 09:58:34.588 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 09:58:34.588 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 09:58:34.589 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 09:58:34.590 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 09:58:37.925 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:58:37.926 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:58:38.927 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:58:39.930 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:58:40.931 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:58:41.932 | TRACE    | VDrone.connection:_tx_message_pump:246 - Send -- Topic: gyro
+2021-04-18 09:58:42.928 | DEBUG    | VDrone.connection:kill:107 - Drone kill signal set
+2021-04-18 09:58:42.931 | INFO     | VDrone.connection:run:116 - Exiting the program
+2021-04-18 10:00:22.291 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 10:00:22.291 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 10:00:22.292 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 10:00:22.292 | DEBUG    | VDrone.connection:_boot_zmq:203 - Subscribed socket rx_sim to topic rx_heartbeat
+2021-04-18 10:00:22.292 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 10:00:22.293 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 10:00:22.294 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 10:00:22.295 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:00:23.299 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:00:24.303 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:00:25.308 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:00:26.301 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:00:27.305 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:00:28.299 | DEBUG    | VDrone.connection:kill:107 - Drone kill signal set
+2021-04-18 10:00:28.304 | INFO     | VDrone.connection:run:116 - Exiting the program
+2021-04-18 10:18:35.219 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 10:18:35.219 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 10:18:35.220 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 10:18:35.220 | DEBUG    | VDrone.connection:_boot_zmq:203 - Subscribed socket rx_sim to topic rx_heartbeat
+2021-04-18 10:18:35.220 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 10:18:35.221 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 10:18:35.222 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 10:19:51.618 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 10:19:51.618 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 10:19:51.619 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 10:19:51.619 | DEBUG    | VDrone.connection:_boot_zmq:203 - Subscribed socket rx_sim to topic rx_heartbeat
+2021-04-18 10:19:51.619 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 10:19:51.620 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 10:19:51.621 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 10:19:51.622 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:22:55.746 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [sensor] to tcp://127.0.0.1:50100
+2021-04-18 10:22:55.746 | DEBUG    | VDrone.connection:_boot_zmq:188 - Bind pub socket [tx_sim] to tcp://127.0.0.1:50210
+2021-04-18 10:22:55.747 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [rx_sim] to tcp://127.0.0.1:50211
+2021-04-18 10:22:55.747 | DEBUG    | VDrone.connection:_boot_zmq:203 - Subscribed socket rx_sim to topic rx_heartbeat
+2021-04-18 10:22:55.747 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [system_control] to tcp://127.0.0.1:50200
+2021-04-18 10:22:55.748 | DEBUG    | VDrone.connection:_boot_zmq:198 - Connect sub socket [user_input] to tcp://127.0.0.1:50205
+2021-04-18 10:22:55.749 | INFO     | VDrone.connection:run:110 - Executing the SimConnection thread
+2021-04-18 10:22:55.750 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:06.776 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:07.767 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:08.770 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:09.771 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:10.771 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:11.774 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:12.776 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:13.781 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:14.773 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:15.777 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:16.778 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:17.782 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:18.787 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:19.779 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:20.781 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:21.784 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:22.788 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:23.791 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:24.795 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:25.789 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:26.795 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:27.796 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:28.800 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:29.793 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:30.796 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:31.798 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:32.800 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:33.802 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:34.799 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:35.804 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:36.807 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:37.799 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:38.803 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:39.807 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:40.809 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:41.812 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:42.804 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:43.805 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:44.807 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:45.811 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:46.814 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:47.816 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:48.820 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:49.812 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:50.815 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:51.820 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:52.813 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:53.815 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:54.819 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:55.821 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:56.825 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:57.827 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:58.828 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:23:59.831 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:00.823 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:01.825 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:02.829 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:03.833 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:04.826 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:05.828 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:06.829 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:07.830 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:08.832 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:09.833 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:10.835 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:11.837 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:12.839 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:13.841 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:14.834 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:15.836 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:16.840 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:17.847 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:18.848 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:19.850 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:20.851 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:21.852 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:22.853 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:23.853 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:24.847 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:25.851 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:26.851 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:27.851 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:28.852 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:29.853 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:30.854 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:31.857 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:32.859 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:33.861 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:34.864 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:35.856 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:36.859 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:37.862 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:38.865 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:39.859 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:40.860 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:41.862 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:42.867 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:43.871 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:44.864 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:45.868 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:46.873 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:47.867 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:48.871 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:49.875 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:50.878 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:51.872 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:52.874 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:53.877 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:54.880 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:55.882 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:56.874 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:57.878 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:58.884 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:24:59.878 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:00.880 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:01.884 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:02.885 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:03.885 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:04.887 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:05.889 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:06.893 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:07.885 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:08.888 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:09.891 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:10.894 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:11.897 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:12.899 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:13.891 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:14.902 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:15.902 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:16.894 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:17.905 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:18.896 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:19.907 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:20.900 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:21.903 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:22.907 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:23.910 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:24.904 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:25.909 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:26.911 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:27.911 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:28.912 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:29.913 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:30.914 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:31.908 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:32.910 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:33.913 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:34.917 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:35.912 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:36.914 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:37.916 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:38.918 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:39.918 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:40.923 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:41.926 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:42.927 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:43.928 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:44.929 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:45.921 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:46.922 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:47.927 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:48.930 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:49.933 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:50.925 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:51.929 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:52.935 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:53.927 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:54.928 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:55.929 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:56.933 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:57.931 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:58.938 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:25:59.938 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:00.937 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:01.945 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:02.942 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:03.937 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:04.940 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:05.941 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:06.940 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:07.947 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:08.951 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:09.948 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:10.952 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:11.949 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:12.955 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:13.950 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:14.954 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:15.954 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:16.955 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:17.952 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:18.955 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:19.959 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:20.965 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:21.957 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:22.966 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:23.969 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:24.964 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:25.968 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:26.963 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:27.971 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:28.967 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:29.974 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:30.971 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:31.968 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:32.974 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:33.972 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:34.976 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:35.980 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:36.975 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:37.983 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:38.985 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:39.983 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:40.978 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:41.986 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:42.980 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:43.989 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:44.984 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:45.984 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:46.987 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:47.989 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:48.997 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:49.992 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:50.998 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:51.991 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:52.995 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:53.999 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:55.002 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:55.993 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:57.000 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:57.996 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:26:59.000 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:00.003 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:01.006 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:02.007 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:03.009 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:04.010 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:05.003 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:06.006 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:07.007 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:08.010 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:09.012 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:10.013 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:11.016 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:12.019 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:13.011 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:14.013 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:15.014 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:16.017 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:17.016 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:18.020 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:19.023 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:20.026 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:21.029 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:22.022 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:23.024 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:24.024 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:25.026 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:26.028 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:27.031 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:28.033 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:29.033 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:30.031 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:31.032 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:32.035 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:33.038 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:34.032 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:35.033 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:36.035 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:37.037 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:38.036 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:39.037 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:40.040 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:41.044 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:42.048 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:43.042 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:44.044 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:45.045 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:46.047 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:47.052 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:48.048 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:49.055 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:50.057 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:51.055 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:52.054 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:53.051 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:54.057 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:55.060 | TRACE    | VDrone.connection:_tx_message_pump:251 - Send -- Topic: gyro
+2021-04-18 10:27:56.054 | DEBUG    | VDrone.connection:kill:107 - Drone kill signal set
+2021-04-18 10:27:56.055 | INFO     | VDrone.connection:run:116 - Exiting the program

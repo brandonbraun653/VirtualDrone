@@ -191,11 +191,16 @@ class SimConnection(Thread):
         for socket in self._zmq_sub_sockets.keys():
             if socket not in cfg['port'].keys():
                 logger.error("Missing port configuration for {}".format(socket))
+
+            # Do the connection
             conn_to = "{}:{}".format(port_format, cfg['port'][socket])
             self._zmq_sub_sockets[socket].connect(conn_to)
+            logger.debug("Connect sub socket [{}] to {}".format(socket, conn_to))
+
+            # Subscribe to various topics
             for topic in self._data_map.get_socket_subscriber_list(socket):
                 self._zmq_sub_sockets[socket].setsockopt_string(zmq.SUBSCRIBE, topic.value)
-            logger.debug("Connect sub socket [{}] to {}".format(socket, conn_to))
+                logger.debug("Subscribed socket {} to topic {}".format(socket, topic.value))
 
     def _rx_message_pump(self) -> None:
         """
@@ -215,7 +220,7 @@ class SimConnection(Thread):
                         raise zmq.ZMQError()
 
                     # Update the connection status if the heart beat is sent
-                    if msg[0] == self.RxTopics.HEARTBEAT.value:
+                    if msg[0].decode('utf-8') == self.RxTopics.HEARTBEAT.value:
                         self._fcs_connected.update(True)
                         continue
 
@@ -226,7 +231,7 @@ class SimConnection(Thread):
                     if isinstance(param, IParameter):
                         self._rx_queue.put(item=param, block=True, timeout=0.1)
 
-                except (zmq.ZMQError, ValueError):
+                except (zmq.ZMQError, ValueError) as e:
                     more_data = False
 
     def _tx_message_pump(self) -> None:
