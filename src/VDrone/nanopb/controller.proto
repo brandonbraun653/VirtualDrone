@@ -1,0 +1,11 @@
+syntax = "proto2";
+import "nanopb.proto";
+
+
+message ControllerInputs
+{
+  required fixed32 timestamp = 1;       // System ticks in milliseconds
+  required fixed32 stick_inputs = 2;    // Packed 4 bytes: Pitch, Roll, Yaw, Throttle
+  required fixed32 switch_inputs = 3;   // Packed 4 bytes: Switch A/B/C/D
+  required fixed32 encoder_inputs = 4;  // Packed 4 bytes: Encoder 0/1 Position/Button State
+}
