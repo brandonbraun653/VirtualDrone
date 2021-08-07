@@ -14,18 +14,21 @@ typedef struct _AccelSample {
     float x;
     float y;
     float z;
+    uint32_t timestamp;
 } AccelSample;
 
 typedef struct _GyroSample {
     float x;
     float y;
     float z;
+    uint32_t timestamp;
 } GyroSample;
 
 typedef struct _MagSample {
     float x;
     float y;
     float z;
+    uint32_t timestamp;
 } MagSample;
 
 
@@ -34,43 +37,49 @@ extern "C" {
 #endif
 
 /* Initializer values for message structs */
-#define AccelSample_init_default                 {0, 0, 0}
-#define GyroSample_init_default                  {0, 0, 0}
-#define MagSample_init_default                   {0, 0, 0}
-#define AccelSample_init_zero                    {0, 0, 0}
-#define GyroSample_init_zero                     {0, 0, 0}
-#define MagSample_init_zero                      {0, 0, 0}
+#define AccelSample_init_default                 {0, 0, 0, 0}
+#define GyroSample_init_default                  {0, 0, 0, 0}
+#define MagSample_init_default                   {0, 0, 0, 0}
+#define AccelSample_init_zero                    {0, 0, 0, 0}
+#define GyroSample_init_zero                     {0, 0, 0, 0}
+#define MagSample_init_zero                      {0, 0, 0, 0}
 
 /* Field tags (for use in manual encoding/decoding) */
 #define AccelSample_x_tag                        1
 #define AccelSample_y_tag                        2
 #define AccelSample_z_tag                        3
+#define AccelSample_timestamp_tag                4
 #define GyroSample_x_tag                         1
 #define GyroSample_y_tag                         2
 #define GyroSample_z_tag                         3
+#define GyroSample_timestamp_tag                 4
 #define MagSample_x_tag                          1
 #define MagSample_y_tag                          2
 #define MagSample_z_tag                          3
+#define MagSample_timestamp_tag                  4
 
 /* Struct field encoding specification for nanopb */
 #define AccelSample_FIELDLIST(X, a) \
 X(a, STATIC,   REQUIRED, FLOAT,    x,                 1) \
 X(a, STATIC,   REQUIRED, FLOAT,    y,                 2) \
-X(a, STATIC,   REQUIRED, FLOAT,    z,                 3)
+X(a, STATIC,   REQUIRED, FLOAT,    z,                 3) \
+X(a, STATIC,   REQUIRED, UINT32,   timestamp,         4)
 #define AccelSample_CALLBACK NULL
 #define AccelSample_DEFAULT NULL
 
 #define GyroSample_FIELDLIST(X, a) \
 X(a, STATIC,   REQUIRED, FLOAT,    x,                 1) \
 X(a, STATIC,   REQUIRED, FLOAT,    y,                 2) \
-X(a, STATIC,   REQUIRED, FLOAT,    z,                 3)
+X(a, STATIC,   REQUIRED, FLOAT,    z,                 3) \
+X(a, STATIC,   REQUIRED, UINT32,   timestamp,         4)
 #define GyroSample_CALLBACK NULL
 #define GyroSample_DEFAULT NULL
 
 #define MagSample_FIELDLIST(X, a) \
 X(a, STATIC,   REQUIRED, FLOAT,    x,                 1) \
 X(a, STATIC,   REQUIRED, FLOAT,    y,                 2) \
-X(a, STATIC,   REQUIRED, FLOAT,    z,                 3)
+X(a, STATIC,   REQUIRED, FLOAT,    z,                 3) \
+X(a, STATIC,   REQUIRED, UINT32,   timestamp,         4)
 #define MagSample_CALLBACK NULL
 #define MagSample_DEFAULT NULL
 
@@ -84,9 +93,9 @@ extern const pb_msgdesc_t MagSample_msg;
 #define MagSample_fields &MagSample_msg
 
 /* Maximum encoded size of messages (where known) */
-#define AccelSample_size                         15
-#define GyroSample_size                          15
-#define MagSample_size                           15
+#define AccelSample_size                         21
+#define GyroSample_size                          21
+#define MagSample_size                           21
 
 #ifdef __cplusplus
 } /* extern "C" */
