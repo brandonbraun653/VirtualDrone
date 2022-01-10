@@ -9,13 +9,53 @@
 #error Regenerate this file with the current version of nanopb generator.
 #endif
 
+/* Enum definitions */
+typedef enum _DiscreteEvent_SignalType { 
+    DiscreteEvent_SignalType_PitchTrimUp = 0, 
+    DiscreteEvent_SignalType_PitchTrimDn = 1, 
+    DiscreteEvent_SignalType_RollTrimUp = 2, 
+    DiscreteEvent_SignalType_RollTrimDn = 3, 
+    DiscreteEvent_SignalType_YawTrimUp = 4, 
+    DiscreteEvent_SignalType_YawTrimDn = 5, 
+    DiscreteEvent_SignalType_ThrottleTrimUp = 6, 
+    DiscreteEvent_SignalType_ThrottleTrimDn = 7, 
+    DiscreteEvent_SignalType_SwitchAToggle = 8, 
+    DiscreteEvent_SignalType_SwitchBToggle = 9, 
+    DiscreteEvent_SignalType_SwitchCToggle = 10, 
+    DiscreteEvent_SignalType_SwitchDToggle = 11, 
+    DiscreteEvent_SignalType_Encoder0Center = 12, 
+    DiscreteEvent_SignalType_Encoder1Center = 13 
+} DiscreteEvent_SignalType;
+
+typedef enum _DiscreteEvent_StateType { 
+    DiscreteEvent_StateType_Active = 0, 
+    DiscreteEvent_StateType_Inactive = 1, 
+    DiscreteEvent_StateType_HiZ = 2 
+} DiscreteEvent_StateType;
+
 /* Struct definitions */
-typedef struct _ControllerInputs { 
-    uint32_t timestamp; /* System ticks in milliseconds */
-    uint32_t stick_inputs; /* Packed 4 bytes: Pitch, Roll, Yaw, Throttle */
-    uint32_t switch_inputs; /* Packed 4 bytes: Switch A/B/C/D */
-    uint32_t encoder_inputs; /* Packed 4 bytes: Encoder 0/1 Position/Button State */
-} ControllerInputs;
+typedef struct _DiscreteEvent { 
+    DiscreteEvent_SignalType signal; 
+    DiscreteEvent_StateType state; 
+    uint32_t timestamp; 
+} DiscreteEvent;
+
+typedef struct _StickInputs { 
+    float pitch; 
+    float roll; 
+    float yaw; 
+    float throttle; 
+} StickInputs;
+
+
+/* Helper constants for enums */
+#define _DiscreteEvent_SignalType_MIN DiscreteEvent_SignalType_PitchTrimUp
+#define _DiscreteEvent_SignalType_MAX DiscreteEvent_SignalType_Encoder1Center
+#define _DiscreteEvent_SignalType_ARRAYSIZE ((DiscreteEvent_SignalType)(DiscreteEvent_SignalType_Encoder1Center+1))
+
+#define _DiscreteEvent_StateType_MIN DiscreteEvent_StateType_Active
+#define _DiscreteEvent_StateType_MAX DiscreteEvent_StateType_HiZ
+#define _DiscreteEvent_StateType_ARRAYSIZE ((DiscreteEvent_StateType)(DiscreteEvent_StateType_HiZ+1))
 
 
 #ifdef __cplusplus
@@ -23,31 +63,46 @@ extern "C" {
 #endif
 
 /* Initializer values for message structs */
-#define ControllerInputs_init_default            {0, 0, 0, 0}
-#define ControllerInputs_init_zero               {0, 0, 0, 0}
+#define StickInputs_init_default                 {0, 0, 0, 0}
+#define DiscreteEvent_init_default               {_DiscreteEvent_SignalType_MIN, _DiscreteEvent_StateType_MIN, 0}
+#define StickInputs_init_zero                    {0, 0, 0, 0}
+#define DiscreteEvent_init_zero                  {_DiscreteEvent_SignalType_MIN, _DiscreteEvent_StateType_MIN, 0}
 
 /* Field tags (for use in manual encoding/decoding) */
-#define ControllerInputs_timestamp_tag           1
-#define ControllerInputs_stick_inputs_tag        2
-#define ControllerInputs_switch_inputs_tag       3
-#define ControllerInputs_encoder_inputs_tag      4
+#define DiscreteEvent_signal_tag                 1
+#define DiscreteEvent_state_tag                  2
+#define DiscreteEvent_timestamp_tag              3
+#define StickInputs_pitch_tag                    1
+#define StickInputs_roll_tag                     2
+#define StickInputs_yaw_tag                      3
+#define StickInputs_throttle_tag                 4
 
 /* Struct field encoding specification for nanopb */
-#define ControllerInputs_FIELDLIST(X, a) \
-X(a, STATIC,   REQUIRED, FIXED32,  timestamp,         1) \
-X(a, STATIC,   REQUIRED, FIXED32,  stick_inputs,      2) \
-X(a, STATIC,   REQUIRED, FIXED32,  switch_inputs,     3) \
-X(a, STATIC,   REQUIRED, FIXED32,  encoder_inputs,    4)
-#define ControllerInputs_CALLBACK NULL
-#define ControllerInputs_DEFAULT NULL
+#define StickInputs_FIELDLIST(X, a) \
+X(a, STATIC,   REQUIRED, FLOAT,    pitch,             1) \
+X(a, STATIC,   REQUIRED, FLOAT,    roll,              2) \
+X(a, STATIC,   REQUIRED, FLOAT,    yaw,               3) \
+X(a, STATIC,   REQUIRED, FLOAT,    throttle,          4)
+#define StickInputs_CALLBACK NULL
+#define StickInputs_DEFAULT NULL
 
-extern const pb_msgdesc_t ControllerInputs_msg;
+#define DiscreteEvent_FIELDLIST(X, a) \
+X(a, STATIC,   REQUIRED, UENUM,    signal,            1) \
+X(a, STATIC,   REQUIRED, UENUM,    state,             2) \
+X(a, STATIC,   REQUIRED, FIXED32,  timestamp,         3)
+#define DiscreteEvent_CALLBACK NULL
+#define DiscreteEvent_DEFAULT NULL
+
+extern const pb_msgdesc_t StickInputs_msg;
+extern const pb_msgdesc_t DiscreteEvent_msg;
 
 /* Defines for backwards compatibility with code written before nanopb-0.4.0 */
-#define ControllerInputs_fields &ControllerInputs_msg
+#define StickInputs_fields &StickInputs_msg
+#define DiscreteEvent_fields &DiscreteEvent_msg
 
 /* Maximum encoded size of messages (where known) */
-#define ControllerInputs_size                    20
+#define DiscreteEvent_size                       9
+#define StickInputs_size                         20
 
 #ifdef __cplusplus
 } /* extern "C" */

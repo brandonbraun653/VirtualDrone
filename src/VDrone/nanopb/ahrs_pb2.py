@@ -11,7 +11,6 @@ from google.protobuf import symbol_database as _symbol_database
 _sym_db = _symbol_database.Default()
 
 
-import nanopb_pb2 as nanopb__pb2
 
 
 DESCRIPTOR = _descriptor.FileDescriptor(
@@ -20,9 +19,8 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   syntax='proto2',
   serialized_options=None,
   create_key=_descriptor._internal_create_key,
-  serialized_pb=b'\n\nahrs.proto\x1a\x0cnanopb.proto\"A\n\x0b\x41\x63\x63\x65lSample\x12\t\n\x01x\x18\x01 \x02(\x02\x12\t\n\x01y\x18\x02 \x02(\x02\x12\t\n\x01z\x18\x03 \x02(\x02\x12\x11\n\ttimestamp\x18\x04 \x02(\r\"@\n\nGyroSample\x12\t\n\x01x\x18\x01 \x02(\x02\x12\t\n\x01y\x18\x02 \x02(\x02\x12\t\n\x01z\x18\x03 \x02(\x02\x12\x11\n\ttimestamp\x18\x04 \x02(\r\"?\n\tMagSample\x12\t\n\x01x\x18\x01 \x02(\x02\x12\t\n\x01y\x18\x02 \x02(\x02\x12\t\n\x01z\x18\x03 \x02(\x02\x12\x11\n\ttimestamp\x18\x04 \x02(\r'
-  ,
-  dependencies=[nanopb__pb2.DESCRIPTOR,])
+  serialized_pb=b'\n\nahrs.proto\"A\n\x0b\x41\x63\x63\x65lSample\x12\t\n\x01x\x18\x01 \x02(\x02\x12\t\n\x01y\x18\x02 \x02(\x02\x12\t\n\x01z\x18\x03 \x02(\x02\x12\x11\n\ttimestamp\x18\x04 \x02(\r\"@\n\nGyroSample\x12\t\n\x01x\x18\x01 \x02(\x02\x12\t\n\x01y\x18\x02 \x02(\x02\x12\t\n\x01z\x18\x03 \x02(\x02\x12\x11\n\ttimestamp\x18\x04 \x02(\r\"?\n\tMagSample\x12\t\n\x01x\x18\x01 \x02(\x02\x12\t\n\x01y\x18\x02 \x02(\x02\x12\t\n\x01z\x18\x03 \x02(\x02\x12\x11\n\ttimestamp\x18\x04 \x02(\r'
+)
 
 
 
@@ -75,8 +73,8 @@ _ACCELSAMPLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=28,
-  serialized_end=93,
+  serialized_start=14,
+  serialized_end=79,
 )
 
 
@@ -128,8 +126,8 @@ _GYROSAMPLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=95,
-  serialized_end=159,
+  serialized_start=81,
+  serialized_end=145,
 )
 
 
@@ -181,8 +179,8 @@ _MAGSAMPLE = _descriptor.Descriptor(
   extension_ranges=[],
   oneofs=[
   ],
-  serialized_start=161,
-  serialized_end=224,
+  serialized_start=147,
+  serialized_end=210,
 )
 
 DESCRIPTOR.message_types_by_name['AccelSample'] = _ACCELSAMPLE

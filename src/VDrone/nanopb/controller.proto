@@ -1,11 +1,41 @@
 syntax = "proto2";
-import "nanopb.proto";
 
-
-message ControllerInputs
+message StickInputs
 {
-  required fixed32 timestamp = 1;       // System ticks in milliseconds
-  required fixed32 stick_inputs = 2;    // Packed 4 bytes: Pitch, Roll, Yaw, Throttle
-  required fixed32 switch_inputs = 3;   // Packed 4 bytes: Switch A/B/C/D
-  required fixed32 encoder_inputs = 4;  // Packed 4 bytes: Encoder 0/1 Position/Button State
+  required float pitch = 1;
+  required float roll = 2;
+  required float yaw = 3;
+  required float throttle = 4;
+}
+
+message DiscreteEvent
+{
+  enum SignalType
+  {
+    PitchTrimUp = 0;
+    PitchTrimDn = 1;
+    RollTrimUp = 2;
+    RollTrimDn = 3;
+    YawTrimUp = 4;
+    YawTrimDn = 5;
+    ThrottleTrimUp = 6;
+    ThrottleTrimDn = 7;
+    SwitchAToggle = 8;
+    SwitchBToggle = 9;
+    SwitchCToggle = 10;
+    SwitchDToggle = 11;
+    Encoder0Center = 12;
+    Encoder1Center = 13;
+  }
+
+  enum StateType
+  {
+    Active = 0;
+    Inactive = 1;
+    HiZ = 2;
+  }
+
+  required SignalType signal = 1;
+  required StateType state = 2;
+  required fixed32 timestamp = 3;
 }

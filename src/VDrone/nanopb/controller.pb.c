@@ -6,7 +6,12 @@
 #error Regenerate this file with the current version of nanopb generator.
 #endif
 
-PB_BIND(ControllerInputs, ControllerInputs, AUTO)
+PB_BIND(StickInputs, StickInputs, AUTO)
+
+
+PB_BIND(DiscreteEvent, DiscreteEvent, AUTO)
+
+
 
 
 
